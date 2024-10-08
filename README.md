@@ -1,4 +1,4 @@
 # QLSV_C
 
-`*có thể xuất dưới dạng cột sinh viên hoặc bảng sinh viên*`
-<img src="../../../../dowload in data E/Racon/3283fc68-797c-4fa9-92da-d918263cfd90.jpg">
+_có thể xuất dưới dạng cột sinh viên hoặc bảng sinh viên_
+![haha](https://i.pinimg.com/564x/b9/c8/30/b9c83068d20c0473b335b758dbd28939.jpg)
