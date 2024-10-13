@@ -8,6 +8,7 @@
 
 struct SinhVien
 {
+    int STT;
     char hoTen[40];
     char MSSV[10];
     char lop[10];
@@ -25,6 +26,8 @@ void nhap(sv *x)
 {
     for (int i = 0; i < 1; i++)
     {
+        x->STT = i + 1;
+
         printf("Nhap ten: ");
         fgets(x->hoTen, sizeof(x->hoTen), stdin);
         if (strcmp(x->hoTen, "\n") == 0)
@@ -58,7 +61,8 @@ void xuat(sv x)
     // printf("Lop: %s", x.lop);
     // printf("Khoa: %s", x.khoa);
     // printf("Diem: %.2f\n", x.diem);
-    printf("\nHo ten: %s\n", x.hoTen);
+    printf("\nSTT: %d\n", x.STT);
+    printf("Ho ten: %s\n", x.hoTen);
     printf("MSSV: %s\n", x.MSSV);
     printf("Lop: %s\n", x.lop);
     printf("Khoa: %s\n", x.khoa);
@@ -149,7 +153,7 @@ void danhSachSVGioi(sv *a, int n)
     system("cls");
     int gioi = 0;
     printf("Danh sach sinh vien loai Gioi\n");
-    printf("Ho Ten\t\t     MSSV\tLop\t Khoa\t  Diem\n\n");
+    printf(" Ho Ten\t\t     MSSV\tLop\t Khoa\t  Diem\n\n");
     for (int i = 0; i < n; i++)
     {
         if (a[i].diem >= 8 && a[i].diem <= 10)
@@ -161,7 +165,10 @@ void danhSachSVGioi(sv *a, int n)
         }
     }
     if (gioi == 0)
+    {
+        system("cls");
         printf("\nDanh sach lop khong co sinh vien gioi");
+    }
 }
 
 void danhSachSVKha(sv *a, int n)
@@ -169,7 +176,7 @@ void danhSachSVKha(sv *a, int n)
     system("cls");
     int kha = 0;
     printf("Danh sach sinh vien loai Kha\n");
-    printf("Ho Ten\t\t     MSSV\tLop\t Khoa\t  Diem\n\n");
+    printf(" Ho Ten\t\t     MSSV\tLop\t Khoa\t  Diem\n\n");
     for (int i = 0; i < n; i++)
     {
         if (a[i].diem < 8 && a[i].diem >= 6.5)
@@ -181,7 +188,10 @@ void danhSachSVKha(sv *a, int n)
         }
     }
     if (kha == 0)
+    {
+        system("cls");
         printf("\nDanh sach lop khong co sinh vien kha");
+    }
 }
 
 void danhSachSVTrungBinh(sv *a, int n)
@@ -201,7 +211,10 @@ void danhSachSVTrungBinh(sv *a, int n)
         }
     }
     if (trungbinh == 0)
+    {
+        system("cls");
         printf("\nDanh sach lop khong co sinh vien Trung Binh");
+    }
 }
 
 void danhSachSVYeu(sv *a, int n)
@@ -221,7 +234,10 @@ void danhSachSVYeu(sv *a, int n)
         }
     }
     if (yeu == 0)
+    {
+        system("cls");
         printf("\nDanh sach lop khong co sinh vien Yeu");
+    }
 }
 
 void top1(sv *a, int n)
@@ -237,7 +253,10 @@ void top1(sv *a, int n)
     for (int i = 0; i < n; i++)
     {
         if (a[i].diem == max)
+        {
             xuat(a[i]);
+            break;
+        }
     }
 }
 
@@ -254,7 +273,10 @@ void topN(sv *a, int n)
     for (int i = 0; i < n; i++)
     {
         if (a[i].diem == min)
+        {
             xuat(a[i]);
+            break;
+        }
     }
 }
 
@@ -351,11 +373,12 @@ void suaDiem(float *inf)
 void chinhSua(sv *a, int n)
 {
     char thongTin[40];
-    int x;
     printf("Nhap Ten hoac MSSV cua sinh vien ban muon chinh sua thong tin: ");
     fgets(thongTin, sizeof(thongTin), stdin);
     xoaKiTuXuongDong(thongTin);
+
     int found = 0;
+    int x;
     for (int i = 0; i < n; i++)
     {
         if ((strcmp(thongTin, a[i].hoTen) == 0) || (strcmp(thongTin, a[i].MSSV) == 0))
@@ -450,6 +473,7 @@ void chenSinhVien(sv **a, int *n)
         }
     }
     printf("\nNhap thong tin sinh vien\n");
+
     nhap(&(*a)[viTri]);
     hoanVi(&(*a)[viTri], &(*a)[viTri - 1]);
 }
@@ -495,6 +519,9 @@ void xoaSV(sv *a, int *n)
     }
 
     (*n)--;
+
+    // sv *b = (sv *)realloc(*a, (*n - 1) * sizeof(sv));
+    // *a = b;
 }
 
 void xoaSVDuoi5(sv *a, int *n)
@@ -546,6 +573,7 @@ void nhapFile(sv *a, int n, char *fileName)
 
     for (int i = 0; i < n; i++)
     {
+        a[i].STT = i + 1;
         fgets(a[i].hoTen, sizeof(a[i].hoTen), file);
         fgets(a[i].MSSV, sizeof(a[i].MSSV), file);
         fgets(a[i].lop, sizeof(a[i].lop), file);
@@ -576,8 +604,10 @@ void nhapFileBang(sv *a, int n, char *fileName)
 
     for (int i = 0; i < n; i++)
     {
+        a[i].STT = i + 1;
+
         fgets(a[i].hoTen, sizeof(a[i].hoTen), file);
-        xoaKiTuXuongDong(a[i].hoTen); // Loại bỏ ký tự xuống dòng
+        xoaKiTuXuongDong(a[i].hoTen);
 
         fgets(a[i].MSSV, sizeof(a[i].MSSV), file);
         xoaKiTuXuongDong(a[i].MSSV);
@@ -595,13 +625,13 @@ void nhapFileBang(sv *a, int n, char *fileName)
 
 void xuatNgang(sv x)
 {
-    printf("%-20s %-10s %-8s %-8s %.2f\n", x.hoTen, x.MSSV, x.lop, x.khoa, x.diem);
+    printf(" %d\t%-20s %-10s %-8s %-8s %.2f\n", x.STT, x.hoTen, x.MSSV, x.lop, x.khoa, x.diem);
 }
 
 void DSSVtable(sv *a, int n)
 {
     system("cls");
-    printf("Ho Ten\t\t     MSSV\tLop\t Khoa\t  Diem\n\n");
+    printf(" STT\tHo Ten\t\t     MSSV\tLop\t Khoa\t  Diem\n\n");
     for (int i = 0; i < n; i++)
     {
         xuatNgang(a[i]);
