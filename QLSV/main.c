@@ -31,16 +31,20 @@ int main()
         set_color_sc(14);
         printf("Nhan phim\n\n");
         set_color_sc(15);
-        printf("(1) hien thi danh sach sinh vien\n");
-        printf("(2) tra cuu thong tin sinh vien\n");
-        printf("(3) sap xep danh sach sinh vien\n");
-        printf("(4) chinh sua thong tin sinh vien\n");
-        printf("(5) them, xoa, chen sinh vien\n");
+        printf("(0) Thoat chuong trinh\n");
+        printf("(1) Hien thi danh sach sinh vien\n");
+        printf("(2) Tra cuu thong tin sinh vien\n");
+        printf("(3) Sap xep danh sach sinh vien\n");
+        printf("(4) Chinh sua thong tin sinh vien\n");
+        printf("(5) Them, xoa, chen sinh vien\n");
 
         scanf("%d", &number);
         getchar();
         switch (number)
         {
+        case 0:
+            goto quit;
+            break;
         // Danh sach
         case 1:
         {
@@ -57,6 +61,8 @@ int main()
             printf("(5) Danh sach sinh vien Yeu (diem < 5)\n");
             printf("(6) Sinh vien co diem cao nhat\n");
             printf("(7) Sinh vien co diem thap nhat\n");
+            printf("(8) Sinh vien co gioi tinh Nam\n");
+            printf("(9) Sinh vien co gioi tinh Nu\n");
             scanf("%d", &request);
             getchar();
             if (request == 1)
@@ -73,6 +79,10 @@ int main()
                 top1(a, n);
             else if (request == 7)
                 topN(a, n);
+            else if (request == 8)
+                danhSachSVNam(a, n);
+            else if (request == 9)
+                danhSachSVNu(a, n);
             else if (request == 0)
                 goto start;
             else
@@ -168,9 +178,8 @@ int main()
         }
         printf("\n");
         system("pause");
+        xuatFile(a, n, "dssv.txt");
     } while (1);
-
-    printf("\n");
-    system("pause");
+quit:
     return 0;
 }

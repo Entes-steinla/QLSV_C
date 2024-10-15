@@ -366,6 +366,62 @@ void danhSachSVYeu(sv *a, int n)
     }
 }
 
+void danhSachSVNam(sv *a, int n)
+{
+    system("cls");
+    int Nam = 0;
+    set_color_sc(14);
+    printf("Danh sach sinh vien loai co gioi tinh nam\n\n");
+    set_color_sc(15);
+    set_color("01;1");
+    printf("STT   Ho Ten               MSSV         Lop      Khoa     Sex     Ngay Sinh      SDT            Email             Dia chi        Diem TB\n");
+    printf("----------------------------------------------------------------------------------------------------------------------------------------\n");
+    for (int i = 0; i < n; i++)
+    {
+        if (strcmp(a[i].gioiTinh, "Nam") == 0)
+        {
+            set_color_sc(9);
+            printf("%-4d", i + 1); // STT
+            set_color_sc(15);
+            Nam++;
+            xuatTTSV(a[i]);
+        }
+    }
+    if (Nam == 0)
+    {
+        system("cls");
+        printf("\nDanh sach lop khong co sinh vien gioi tinh nam");
+    }
+}
+
+void danhSachSVNu(sv *a, int n)
+{
+    system("cls");
+    int Nu = 0;
+    set_color_sc(14);
+    printf("Danh sach sinh vien loai co gioi tinh nu\n\n");
+    set_color_sc(15);
+    set_color("01;1");
+    printf("STT   Ho Ten               MSSV         Lop      Khoa     Sex     Ngay Sinh      SDT            Email             Dia chi        Diem TB\n");
+    printf("----------------------------------------------------------------------------------------------------------------------------------------\n");
+    for (int i = 0; i < n; i++)
+    {
+        if (strcmp(a[i].gioiTinh, "Nu") == 0)
+        {
+            set_color_sc(9);
+            printf("%-4d", i + 1); // STT
+            set_color_sc(15);
+            Nu++;
+            xuatTTSV(a[i]);
+        }
+    }
+    if (Nu == 0)
+    {
+        system("cls");
+        printf("\nDanh sach lop khong co sinh vien gioi tinh nu");
+    }
+}
+
 void top1(sv *a, int n)
 {
     system("cls");
@@ -621,6 +677,8 @@ void chenSV(sv **a, int *n)
 
     nhapTTSV(&(*a)[viTri]);
     hoanVi(&(*a)[viTri], &(*a)[viTri - 1]);
+
+    xuatDSSV(*a, *n);
 }
 
 void xoaSV(sv **a, int *n)
@@ -692,6 +750,34 @@ void xoaSV(sv **a, int *n)
     xuatDSSV(*a, *n);
 }
 
+void xuatFile(sv *a, int n, char *fileName)
+{
+    FILE *file = fopen(fileName, "w");
+    // if (file == NULL)
+    // {
+    //     printf("Khong mo duoc file\n");
+    //     return;
+    // }
+    fprintf(file, "STT   Ho Ten               MSSV         Lop      Khoa     Sex     Ngay Sinh      SDT            Email             Dia chi        Diem TB\n");
+    fprintf(file, "----------------------------------------------------------------------------------------------------------------------------------------\n");
+    for (int i = 0; i < n; i++)
+    {
+        fprintf(file, "%-4d", i + 1);
+        fprintf(file, "  %-20s %-12s %-8s %-8s %-7s %-14s %-14s %-17s %-13s  %.2f\n",
+                a[i].hoTen,
+                a[i].MSSV,
+                a[i].lop,
+                a[i].khoa,
+                a[i].gioiTinh,
+                a[i].ngaySinh,
+                a[i].SDT,
+                a[i].Email,
+                a[i].diaChi,
+                a[i].diemTB);
+    }
+    fclose(file);
+}
+
 #endif // SINHVIEN_H_INCLUDED
 
-// danh sách sinh viên theo giới tính, năm sinh, dia chi, khoa, lop
+// danh sách sinh viên theo năm sinh, dia chi, khoa, lop
