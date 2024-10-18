@@ -1,9 +1,11 @@
-#include "textColor.h"
-#include "SinhVien.h"
+#include "E:\\vscode\\vscode\\CvaCPP\\SinhVienCauTruc\\QLSV\\LIBRARY\\textColor.h"
+#include "E:\\vscode\\vscode\\CvaCPP\\SinhVienCauTruc\\QLSV\\LIBRARY\\SinhVien.h"
+#include "E:\\vscode\\vscode\\CvaCPP\\SinhVienCauTruc\\QLSV\\LIBRARY\\File.h"
 
 int main()
 {
-    int n = 1;
+nhaplai:
+    int n = 1, choose;
     do
     {
         system("cls");
@@ -20,12 +22,42 @@ int main()
     } while (n <= 0); // lop co it nhat 1 ng
 
     sv *a = (sv *)malloc(n * sizeof(sv));
-    nhapFile(a, n, "sinhvien.txt");
-    // nhapDSSV(a, n);
+
+    system("cls");
+    set_color("01;91");
+    printf("Nhan phim de nhap danh sach sinh vien\n");
+    set_color("01;97");
+    printf("(1) Tu ban phim\n");
+    printf("(2) Tu file danh sach sinh vien\n");
+    printf("(3) Tu file bang diem sinh vien\n");
+    printf("(4) Tu file danh sach sinh vien hoc lai\n");
+    scanf("%d", &choose);
+    getchar();
+    switch (choose)
+    {
+    case 1:
+        nhapDSSV(a, n);
+        break;
+    case 2:
+        nhapFile(a, n, "E:\\vscode\\vscode\\CvaCPP\\SinhVienCauTruc\\QLSV\\FILE\\sinhvien.txt");
+        break;
+    case 3:
+        docBangDiem_bin(a, n, "E:\\vscode\\vscode\\CvaCPP\\SinhVienCauTruc\\QLSV\\FILE\\BIN\\BangDiem.dat");
+        break;
+    case 4:
+        docHocLai_bin(a, n, "E:\\vscode\\vscode\\CvaCPP\\SinhVienCauTruc\\QLSV\\FILE\\BIN\\HocLai.dat");
+        break;
+    default:
+        break;
+    }
 
     int number, request;
     do
     {
+        xuatFile(a, n, "E:\\vscode\\vscode\\CvaCPP\\SinhVienCauTruc\\QLSV\\FILE\\dssv.txt");
+        ghiBangDiem_bin(a, n, "E:\\vscode\\vscode\\CvaCPP\\SinhVienCauTruc\\QLSV\\FILE\\BIN\\BangDiem.dat");
+        ghiHocLai_bin(a, n, "E:\\vscode\\vscode\\CvaCPP\\SinhVienCauTruc\\QLSV\\FILE\\BIN\\HocLai.dat");
+
     start:
         system("cls");
         set_color_sc(14);
@@ -36,7 +68,8 @@ int main()
         printf("(2) Tra cuu thong tin sinh vien\n");
         printf("(3) Sap xep danh sach sinh vien\n");
         printf("(4) Chinh sua thong tin sinh vien\n");
-        printf("(5) Them, xoa, chen sinh vien\n");
+        printf("(5) Them, xoa, chen sinh vien\n\n");
+        printf("(22) Nhap lai danh sach sinh vien\n");
 
         scanf("%d", &number);
         getchar();
@@ -171,14 +204,18 @@ int main()
                 goto themxoa;
             break;
         }
-
+        // nhap lai danh sach
+        case 22:
+        {
+            goto nhaplai;
+            break;
+        }
         default:
             goto start;
             break;
         }
         printf("\n");
         system("pause");
-        xuatFile(a, n, "dssv.txt");
     } while (1);
 quit:
     return 0;

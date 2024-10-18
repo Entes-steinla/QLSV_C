@@ -130,6 +130,8 @@ void xuatDSSV(sv *a, int n)
     // set_color("01;0");
     for (int i = 0; i < n; i++)
     {
+        if (strcmp(a[i].hoTen, "") == 0 || a[i].diemTB < 0)
+            return;
         set_color_sc(9);
         printf("%-4d", i + 1); // STT
         set_color_sc(15);
@@ -149,60 +151,6 @@ void xuatTT1SV(sv x)
     printf("Email: %s\n", x.Email);
     printf("Dia chi: %s\n", x.diaChi);
     printf("Diem trung binh: %.2f\n", x.diemTB);
-}
-
-void nhapFile(sv *a, int n, char *fileName)
-{
-    FILE *file = fopen(fileName, "r");
-    if (file == NULL)
-    {
-        printf("Khong mo duoc file\n");
-        return;
-    }
-
-    for (int i = 0; i < n; i++)
-    {
-        // Nhập Mã số sinh viên
-        fgets(a[i].MSSV, sizeof(a[i].MSSV), file);
-        xoaKiTuXuongDong(a[i].MSSV);
-
-        // Nhập Họ tên
-        fgets(a[i].hoTen, sizeof(a[i].hoTen), file);
-        xoaKiTuXuongDong(a[i].hoTen);
-
-        // Nhập Lớp
-        fgets(a[i].lop, sizeof(a[i].lop), file);
-        xoaKiTuXuongDong(a[i].lop);
-
-        // Nhập Khoa
-        fgets(a[i].khoa, sizeof(a[i].khoa), file);
-        xoaKiTuXuongDong(a[i].khoa);
-
-        // Nhập Giới tính
-        fgets(a[i].gioiTinh, sizeof(a[i].gioiTinh), file);
-        xoaKiTuXuongDong(a[i].gioiTinh);
-
-        // Nhập Ngày sinh
-        fgets(a[i].ngaySinh, sizeof(a[i].ngaySinh), file);
-        xoaKiTuXuongDong(a[i].ngaySinh);
-
-        // Nhập Số điện thoại
-        fgets(a[i].SDT, sizeof(a[i].SDT), file);
-        xoaKiTuXuongDong(a[i].SDT);
-
-        // Nhập Email
-        fgets(a[i].Email, sizeof(a[i].Email), file);
-        xoaKiTuXuongDong(a[i].Email);
-
-        // Nhập địa chỉ
-        fgets(a[i].diaChi, sizeof(a[i].diaChi), file);
-        xoaKiTuXuongDong(a[i].diaChi);
-
-        // Nhập Điểm
-        a[i].diemTB = (double)rand() / RAND_MAX * 10.0;
-    }
-
-    fclose(file);
 }
 
 void traCuuMSSV(sv *a, int n)
@@ -748,34 +696,6 @@ void xoaSV(sv **a, int *n)
     }
 
     xuatDSSV(*a, *n);
-}
-
-void xuatFile(sv *a, int n, char *fileName)
-{
-    FILE *file = fopen(fileName, "w");
-    // if (file == NULL)
-    // {
-    //     printf("Khong mo duoc file\n");
-    //     return;
-    // }
-    fprintf(file, "STT   Ho Ten               MSSV         Lop      Khoa     Sex     Ngay Sinh      SDT            Email             Dia chi        Diem TB\n");
-    fprintf(file, "----------------------------------------------------------------------------------------------------------------------------------------\n");
-    for (int i = 0; i < n; i++)
-    {
-        fprintf(file, "%-4d", i + 1);
-        fprintf(file, "  %-20s %-12s %-8s %-8s %-7s %-14s %-14s %-17s %-13s  %.2f\n",
-                a[i].hoTen,
-                a[i].MSSV,
-                a[i].lop,
-                a[i].khoa,
-                a[i].gioiTinh,
-                a[i].ngaySinh,
-                a[i].SDT,
-                a[i].Email,
-                a[i].diaChi,
-                a[i].diemTB);
-    }
-    fclose(file);
 }
 
 #endif // SINHVIEN_H_INCLUDED
