@@ -24,9 +24,9 @@ nhaplai:
     sv *a = (sv *)malloc(n * sizeof(sv));
 
     system("cls");
-    set_color("01;91");
+    set_color_sc(14);
     printf("Nhan phim de nhap danh sach sinh vien\n");
-    set_color("01;97");
+    set_color_sc(15);
     printf("(1) Tu ban phim\n");
     printf("(2) Tu file danh sach sinh vien\n");
     printf("(3) Tu file bang diem sinh vien\n");
@@ -96,6 +96,8 @@ nhaplai:
             printf("(7) Sinh vien co diem thap nhat\n");
             printf("(8) Sinh vien co gioi tinh Nam\n");
             printf("(9) Sinh vien co gioi tinh Nu\n");
+            printf("(10) Bang diem\n");
+            printf("(11) Danh sach sinh vien hoc lai\n");
             scanf("%d", &request);
             getchar();
             if (request == 1)
@@ -116,6 +118,10 @@ nhaplai:
                 danhSachSVNam(a, n);
             else if (request == 9)
                 danhSachSVNu(a, n);
+            else if (request == 10)
+                bangDiem(a, n);
+            else if (request == 11)
+                hocLai(a, n);
             else if (request == 0)
                 goto start;
             else

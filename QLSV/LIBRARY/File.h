@@ -111,18 +111,9 @@ void docBangDiem_bin(sv *a, int n, char *fileName)
         return;
     }
 
-    // system("cls");
-    // printf("Bang diem\n");
-    // printf("STT   Ho Ten               MSSV         Diem TB\n");
-    // printf("-----------------------------------------------\n");
     for (int i = 0; i < n; i++)
     {
         fread(&a[i], sizeof(sv), 1, file);
-        // printf("%-4d", i + 1);
-        // printf("  %-20s %-12s %.2f\n",
-        //        a[i].hoTen,
-        //        a[i].MSSV,
-        //        a[i].diemTB);
     }
 
     fclose(file);
@@ -156,21 +147,14 @@ void docHocLai_bin(sv *a, int n, char *fileName)
         return;
     }
 
-    // system("cls");
-    // printf("Danh sach sinh vien hoc lai\n");
-    // printf("STT   Ho Ten               MSSV         Diem TB\n");
-    // printf("-----------------------------------------------\n");
     for (int i = 0; i < n; i++)
     {
         fread(&a[i], sizeof(sv), 1, file);
-
-        // printf("%-4d", i + 1);
-        // printf("  %-20s %-12s %.2f\n",
-        //        a[i].hoTen,
-        //        a[i].MSSV,
-        //        a[i].diemTB);
     }
 
     fclose(file);
 }
+
 #endif // FILE_H_INCLUDED
+
+// sua noi dung txt, sua ham nhap diem de check sv

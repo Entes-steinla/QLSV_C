@@ -3,6 +3,7 @@
 #include <conio.h>
 #include <string.h>
 #include <math.h>
+#include <ctype.h>
 
 #ifndef SINHVIEN_H_INCLUDED
 #define SINHVIEN_H_INCLUDED
@@ -130,8 +131,8 @@ void xuatDSSV(sv *a, int n)
     // set_color("01;0");
     for (int i = 0; i < n; i++)
     {
-        if (strcmp(a[i].hoTen, "") == 0 || a[i].diemTB < 0)
-            return;
+        if (isdigit(a[i].diemTB) != 0)
+            continue;
         set_color_sc(9);
         printf("%-4d", i + 1); // STT
         set_color_sc(15);
@@ -367,6 +368,46 @@ void danhSachSVNu(sv *a, int n)
     {
         system("cls");
         printf("\nDanh sach lop khong co sinh vien gioi tinh nu");
+    }
+}
+
+void bangDiem(sv *a, int n)
+{
+    system("cls");
+    set_color_sc(14);
+    printf("Bang diem\n");
+    set_color_sc(15);
+    printf("STT   Ho Ten               MSSV         Diem TB\n");
+    printf("-----------------------------------------------\n");
+    for (int i = 0; i < n; i++)
+    {
+        set_color_sc(9);
+        printf("%-4d", i + 1);
+        set_color_sc(15);
+        printf("  %-20s %-12s %.2f\n",
+               a[i].hoTen,
+               a[i].MSSV,
+               a[i].diemTB);
+    }
+}
+
+void hocLai(sv *a, int n)
+{
+    system("cls");
+    set_color_sc(14);
+    printf("Danh sach sinh vien hoc lai\n");
+    set_color_sc(15);
+    printf("STT   Ho Ten               MSSV         Diem TB\n");
+    printf("-----------------------------------------------\n");
+    for (int i = 0; i < n; i++)
+    {
+        set_color_sc(9);
+        printf("%-4d", i + 1);
+        set_color_sc(15);
+        printf("  %-20s %-12s %.2f\n",
+               a[i].hoTen,
+               a[i].MSSV,
+               a[i].diemTB);
     }
 }
 
