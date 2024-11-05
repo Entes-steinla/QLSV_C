@@ -39,7 +39,7 @@ nhaplai:
         nhapDSSV(a, n);
         break;
     case 2:
-        nhapFile(a, n, "E:\\vscode\\vscode\\CvaCPP\\SinhVienCauTruc\\QLSV\\FILE\\sinhvien.txt");
+        nhapFile(a, n, "E:\\vscode\\vscode\\CvaCPP\\SinhVienCauTruc\\QLSV\\FILE\\sinhvien02.txt");
         break;
     case 3:
         docBangDiem_bin(a, n, "E:\\vscode\\vscode\\CvaCPP\\SinhVienCauTruc\\QLSV\\FILE\\BIN\\BangDiem.dat");
@@ -57,6 +57,7 @@ nhaplai:
         xuatFile(a, n, "E:\\vscode\\vscode\\CvaCPP\\SinhVienCauTruc\\QLSV\\FILE\\dssv.txt");
         ghiBangDiem_bin(a, n, "E:\\vscode\\vscode\\CvaCPP\\SinhVienCauTruc\\QLSV\\FILE\\BIN\\BangDiem.dat");
         ghiHocLai_bin(a, n, "E:\\vscode\\vscode\\CvaCPP\\SinhVienCauTruc\\QLSV\\FILE\\BIN\\HocLai.dat");
+        xuatFileHocLai(a, n, "E:\\vscode\\vscode\\CvaCPP\\SinhVienCauTruc\\QLSV\\FILE\\HocLai.txt");
 
     start:
         system("cls");

@@ -1,0 +1,531 @@
+CD234425
+Nguyen Ngoc Anh
+LTMT1
+CNTT
+Nam
+17/11/2003
+0981234567
+NGA@gmail.com
+Ha Noi
+CD230303
+Nguyen Tien Anh
+LTMT1
+CNTT
+Nam
+10/09/2003
+0987654321
+NTA@gmail.com
+Ha Noi
+CD230345
+Pham Hoang Anh
+LTMT1
+CNTT
+Nam
+25/03/2005
+0976543210
+PHA@gmail.com
+Ha Noi
+CD230452
+Vu Tuan Anh
+LTMT1
+CNTT
+Nam
+28/07/2005
+0965432109
+VTA@gmail.com
+Ha Noi
+CD230392
+Hoang Xuan Canh
+LTMT1
+CNTT
+Nam
+04/01/2005
+0954321098
+HXC@gmail.com
+Ha Noi
+CD230517
+Khuong Duc Cuong
+LTMT1
+CNTT
+Nam
+15/05/2004
+0943210987
+KDC@gmail.com
+Ha Noi
+CD230371
+Nguyen Duc Duong
+LTMT1
+CNTT
+Nam
+14/05/2004
+0932109876
+NDD@gmail.com
+Ha Noi
+CD230403
+Hoang Trong Dat
+LTMT1
+CNTT
+Nam
+21/10/2004
+0921098765
+HTD@gmail.com
+Ha Noi
+CD230319
+Nguyen Thanh Dat
+LTMT1
+CNTT
+Nam
+12/10/2004
+0910987654
+NTD@gmail.com
+Ha Noi
+CD230464
+Nguyen Tien Dat
+LTMT1
+CNTT
+Nam
+15/01/2005
+0909876543
+NTD@gmail.com
+Ha Noi
+CD230708
+Vu Manh Ha
+LTMT1
+CNTT
+Nam
+28/12/2005
+0898765432
+VMH@gmail.com
+Ha Noi
+CD230876
+Nguyen Gia Hien
+LTMT1
+CNTT
+Nam
+15/10/2004
+0887654321
+NGH@gmail.com
+Ha Noi
+CD230687
+Nguyen Tat Hoa
+LTMT1
+CNTT
+Nam
+19/07/2004
+0876543210
+NTH@gmail.com
+Ha Noi
+CD230468
+Hoang Anh Huy
+LTMT1
+CNTT
+Nam
+28/10/2005
+0865432109
+HAH@gmail.com
+Ha Noi
+CD230938
+Nguyen Duc Huy
+LTMT1
+CNTT
+Nam
+09/05/2005
+0854321098
+NDH@gmail.com
+Ha Noi
+CD230309
+Vu Tin Huynh
+LTMT1
+CNTT
+Nam
+02/03/2005
+0843210987
+VTH@gmail.com
+Ha Noi
+CD230738
+Ma Manh Hung
+LTMT1
+CNTT
+Nam
+19/05/2004
+0832109876
+MMH@gmail.com
+Ha Noi
+CD230968
+Nguyen Duy Hung
+LTMT1
+CNTT
+Nam
+03/04/2005
+0821098765
+NDH@gmail.com
+Ha Noi
+CD230578
+Phan Huu Hung
+LTMT1
+CNTT
+Nam
+02/01/2004
+0810987654
+PHH@gmail.com
+Ha Noi
+CD230800
+To Van Hung
+LTMT1
+CNTT
+Nam
+04/10/2005
+0809876543
+TVH@gmail.com
+Ha Noi
+CD230950
+Nguyen Van Khanh
+LTMT1
+CNTT
+Nam
+03/06/2005
+0798765432
+NVK@gmail.com
+Ha Noi
+CD230968
+Vu Trung Kien
+LTMT1
+CNTT
+Nam
+13/07/2003
+0787654321
+VTK@gmail.com
+Ha Noi
+CD230574
+Tran Anh Kiet
+LTMT1
+CNTT
+Nam
+15/02/1999
+0776543210
+TAK@gmail.com
+Ha Noi
+CD230968
+Bui Van Lang
+LTMT1
+CNTT
+Nam
+15/07/2000
+0765432109
+BVL@gmail.com
+Ha Noi
+CD230565
+Nguyen The Lam
+LTMT1
+CNTT
+Nam
+13/06/2005
+0754321098
+NTL@gmail.com
+Ha Noi
+CD230430
+Dang Nguyen Bao Linh
+LTMT1
+CNTT
+Nam
+17/04/2003
+0743210987
+DNBL@gmail.com
+Ha Noi
+CD230834
+Hoang Van Long
+LTMT1
+CNTT
+Nam
+09/12/2003
+0732109876
+HVL@gmail.com
+Ha Noi
+CD230208
+Pham Bao Loc
+LTMT1
+CNTT
+Nam
+05/04/2004
+0721098765
+PBL@gmail.com
+Ha Noi
+CD230267
+Nguyen Sy Manh
+LTMT1
+CNTT
+Nam
+19/12/2003
+0710987654
+NSM@gmail.com
+Ha Noi
+CD230072
+Tran Duc Manh
+LTMT1
+CNTT
+Nam
+12/10/2004
+0709876543
+TDM@gmail.com
+Ha Noi
+CD230600
+Nguyen Bao Minh
+LTMT1
+CNTT
+Nam
+31/10/2005
+0698765432
+NBM@gmail.com
+Ha Noi
+CD230437
+Bui Dinh Nam
+LTMT1
+CNTT
+Nam
+31/10/2005
+0687654321
+BDN@gmail.com
+Ha Noi
+CD230225
+Do Tri Nam
+LTMT1
+CNTT
+Nam
+05/05/2003
+0676543210
+DTN@gmail.com
+Ha Noi
+CD230327
+Nguyen Thanh Nam
+LTMT1
+CNTT
+Nam
+08/05/2001
+0665432109
+NTN@gmail.com
+Ha Noi
+CD230357
+Le Van Phat
+LTMT1
+CNTT
+Nam
+24/04/2005
+0654321098
+LVP@gmail.com
+Ha Noi
+CD230276
+Pham Hoai Vu Phong
+LTMT1
+CNTT
+Nam
+14/10/2003
+0643210987
+PHVP@gmail.com
+Ha Noi
+CD230309
+Le Thanh Quang
+LTMT1
+CNTT
+Nam
+27/05/2005
+0632109876
+LTQ@gmail.com
+Ha Noi
+CD230310
+Hoang Van Quyen
+LTMT1
+CNTT
+Nam
+26/10/2003
+0621098765
+HVQ@gmail.com
+Ha Noi
+CD230294
+Nguyen Van Quyen
+LTMT1
+CNTT
+Nam
+17/07/2005
+0610987654
+NVQ@gmail.com
+Ha Noi
+CD230309
+Nguyen Manh Quynh
+LTMT1
+CNTT
+Nam
+06/06/2003
+0609876543
+NMQ@gmail.com
+Ha Noi
+CD230348
+Truong Duc Tam
+LTMT1
+CNTT
+Nam
+10/12/2003
+0598765432
+TDT@gmail.com
+Ha Noi
+CD230347
+Tran Nhat Tan
+LTMT1
+CNTT
+Nam
+24/03/2004
+0587654321
+TNT@gmail.com
+Ha Noi
+CD230351
+Le Van Thai
+LTMT1
+CNTT
+Nam
+21/12/2001
+0576543210
+LVT@gmail.com
+Ha Noi
+CD230286
+Nguyen Minh Thai
+LTMT1
+CNTT
+Nam
+24/02/2004
+0565432109
+NMT@gmail.com
+Ha Noi
+CD230305
+Pham Trung Thanh
+LTMT1
+CNTT
+Nam
+12/07/2003
+0554321098
+PTT@gmail.com
+Ha Noi
+CD230287
+Manh Xuan The
+LTMT1
+CNTT
+Nam
+25/01/2003
+0543210987
+MXT@gmail.com
+Ha Noi
+CD230309
+Nguyen Duc Thuan
+LTMT1
+CNTT
+Nam
+31/07/2004
+0532109876
+NDT@gmail.com
+Ha Noi
+CD230327
+Trinh Ngoc Tien
+LTMT1
+CNTT
+Nam
+18/12/2002
+0521098765
+TNT@gmail.com
+Ha Noi
+CD230329
+Le Thuy Trang
+LTMT1
+CNTT
+Nu
+03/08/2003
+0510987654
+LTT@gmail.com
+Ha Noi
+CD230294
+Nguyen Van Truong
+LTMT1
+CNTT
+Nam
+30/08/2003
+0510987655
+NVT@gmail.com
+Ha Noi
+CD230312
+Tran Thanh Tu
+LTMT1
+CNTT
+Nam
+27/05/2004
+0510987656
+TTT@gmail.com
+Ha Noi
+CD230287
+Dao Anh Tuan
+LTMT1
+CNTT
+Nam
+25/07/2003
+0510987657
+DAT@gmail.com
+Ha Noi
+CD230311
+Luc Minh Tuan
+LTMT1
+CNTT
+Nam
+24/06/2004
+0510987658
+LMT@gmail.com
+Ha Noi
+CD230310
+Nguyen Anh Tuan
+LTMT1
+CNTT
+Nam
+14/06/2004
+0510987659
+NAT@gmail.com
+Ha Noi
+CD230311
+Tran Minh Tuan
+LTMT1
+CNTT
+Nam
+26/09/2003
+0510987664
+TMT@gmail.com
+Ha Noi
+CD230309
+Doan Van Tuyen
+LTMT1
+CNTT
+Nam
+21/07/2003
+0510987674
+DVT@gmail.com
+Ha Noi
+CD230301
+Ngo Quoc Viet
+LTMT1
+CNTT
+Nam
+05/04/2004
+0510987694
+NQV@gmail.com
+Ha Noi
+CD230299
+Luong Tran Vy
+LTMT1
+CNTT
+Nam
+14/03/2003
+0510987954
+LTV@gmail.com
+Ha Noi
+CD230303
+Nguyen Thi Yen
+LTMT1
+CNTT
+Nu
+26/09/2000
+0510927654
+NTY@gmail.com
+Ha Noi

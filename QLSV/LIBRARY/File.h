@@ -88,6 +88,38 @@ void xuatFile(sv *a, int n, char *fileName)
     fclose(file);
 }
 
+void xuatFileHocLai(sv *a, int n, char *fileName)
+{
+    FILE *file = fopen(fileName, "w");
+    if (file == NULL)
+    {
+        printf("Khong mo duoc file\n");
+        return;
+    }
+    fprintf(file, "STT   Ho Ten               MSSV         Lop      Khoa     Sex     Ngay Sinh      SDT            Email             Dia chi        Diem TB\n");
+    fprintf(file, "----------------------------------------------------------------------------------------------------------------------------------------\n");
+    int count = 1;
+    for (int i = 0; i < n; i++)
+    {
+        if (a[i].diemTB < 5)
+        {
+            fprintf(file, "%-4d", count++);
+            fprintf(file, "  %-20s %-12s %-8s %-8s %-7s %-14s %-14s %-17s %-13s  %.2f\n",
+                    a[i].hoTen,
+                    a[i].MSSV,
+                    a[i].lop,
+                    a[i].khoa,
+                    a[i].gioiTinh,
+                    a[i].ngaySinh,
+                    a[i].SDT,
+                    a[i].Email,
+                    a[i].diaChi,
+                    a[i].diemTB);
+        }
+    }
+    fclose(file);
+}
+
 void ghiBangDiem_bin(sv *a, int n, char *fileName)
 {
     FILE *file = fopen(fileName, "wb");
